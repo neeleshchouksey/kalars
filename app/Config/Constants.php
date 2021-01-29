@@ -75,3 +75,63 @@ defined('EXIT_USER_INPUT')     || define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       || define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      || define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+
+
+define('FILE_READ_MODE', 0644);
+define('FILE_WRITE_MODE', 0666);
+define('DIR_READ_MODE', 0755);
+define('DIR_WRITE_MODE', 0777);
+
+/*
+|--------------------------------------------------------------------------
+| File Stream Modes
+|--------------------------------------------------------------------------
+|
+| These modes are used when working with fopen()/popen()
+|
+*/
+
+define('FOPEN_READ',							'rb');
+define('FOPEN_READ_WRITE',						'r+b');
+define('FOPEN_WRITE_CREATE_DESTRUCTIVE',		'wb'); // truncates existing file data, use with care
+define('FOPEN_READ_WRITE_CREATE_DESTRUCTIVE',	'w+b'); // truncates existing file data, use with care
+define('FOPEN_WRITE_CREATE',					'ab');
+define('FOPEN_READ_WRITE_CREATE',				'a+b');
+define('FOPEN_WRITE_CREATE_STRICT',				'xb');
+define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
+
+if($_SERVER['SERVER_NAME'] == 'localhost')
+{
+    define('IMG_PATH',$_SERVER['DOCUMENT_ROOT'].'/kalars/uploads/gallery/');
+    define('BASE_URL', 'http://'.$_SERVER['HTTP_HOST'].'/kalars/');
+    define('DB_HOST', 'localhost');
+    define('DB_USER', 'root');
+    define('DB_PASSWORD', '');
+    define('DB_DATABASE', 'kalars');
+}
+else{
+    define('IMG_PATH',$_SERVER['DOCUMENT_ROOT'].'/uploads/gallery/');
+    define('BASE_URL', 'http://'.$_SERVER['HTTP_HOST'].'/');
+    define('DB_HOST', 'localhost');
+    define('DB_USER', 'raiditwp_draiitc');
+    define('DB_PASSWORD', 'raid@2018');
+    define('DB_DATABASE', 'raiditwp__kalars_kalar_mi_matrimony');
+}
+
+// CONSTANTS for mail
+define('SMTP_HOST','ssl://smtp.gmail.com');
+define('SMTP_USER','manifest.nidhi@gmail.com');
+define('SMTP_PASS','manifest@123456');
+define('SMTP_PORT','465');
+define('PROTOCOL','smtp');
+define('MAILPATH','');
+define('MAILTYPE','html');
+define('CHARSET','iso-8859-1');
+define('WORD_WRAP',TRUE);
+define('enc_value','1345');
+define('FROM_EMAIL','choukseyneelesh@gmail.com');
+define('FROM_NO_REPLY','');
+define('FROM_NAME','Admin');
+define('SUPPORT_EMAIL','');
+

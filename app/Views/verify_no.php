@@ -7,7 +7,7 @@
 	One Time password has been sent to your mobile no. 
 	<br />
 	<br />
-	<form name="verify-form" action="<?php echo base_url().'home/success';?>" method="post" >
+	<form name="verify-form" action="<?php echo base_url().'/home/success';?>" method="post" >
 		Enter OTP: <input type="text" name="token"/>
 		<input value="Go" name="Go" type="submit" style="margin:0px;">
 	</form>

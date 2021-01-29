@@ -1,5 +1,4 @@
 var Demo = (function() {
-
 	function output(node) {
 		var existing = $('#result .croppie-result');
 		if (existing.length > 0) {
@@ -26,22 +25,22 @@ var Demo = (function() {
 			allowOutsideClick: true
 		});
 		
-		var path = window.location.pathname; 
-		var found_p = path.search("my_profile"); 
+		var path = window.location.pathname;
+		var found_p = path.search("my_profile");
 		var found_r = path.search("sign_up"); 
 		path = path.slice( 1 );
 		if(found_p >-1)
 		{
-			url = site_url + "user/update_profile_pic"
+			url = site_url + "/user/update_profile_pic"
 		}
 		else if(found_r >-1)
 		{
-			url = site_url + "home/set_profile_image"
+			url = site_url + "/home/set_profile_image"
 			jQuery('#registered_image').attr("src", result.src)
 		}
 		else
 		{
-			url = site_url + "user/add_delete_photo"
+			url = site_url + "/user/add_delete_photo"
 		}
 
 		//window.location.href = result.src;return;
@@ -54,18 +53,18 @@ var Demo = (function() {
 			success: function (data){ 
 				if (data == "success")
 				{ 
-					window.location=site_url + "user/my_profile";
+					window.location=site_url + "/user/my_profile";
 				}
 				else if(data == "registered_image")
 				{ 
 					$('#upload-result-loader').hide();
 					$('#upload-result').show();
-					window.location=site_url + "home/sign_up#close";
+					window.location=site_url + "/home/sign_up#close";
 				}
 				else
 				{
 					//window.location=site_url + "user/gallery/5";
-					window.location=site_url + path;
+					window.location='/'+path;
 				}
 			}
 		});

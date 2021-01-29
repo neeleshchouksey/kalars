@@ -31,4 +31,4 @@
 			</div>
 		</div>
 	</div>
-	<script src="assets/slider/bottom.js"></script>
+	<script src="<?php echo base_url();?>/assets/slider/bottom.js"></script>

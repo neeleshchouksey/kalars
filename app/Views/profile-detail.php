@@ -4,9 +4,9 @@
 
 //$profile_pic = $user_data['profile_pic'] == '' ? base_url().'assets/images/default.png' : base_url().'uploads/gallery/'.$user_data['user_id']. $user_data['name'].'/'.$user_data['profile_pic'];
 
-$profile_pic = $user_data['profile_pic'] == '' ? base_url().'assets/images/default.png' : image_thumb('uploads/gallery/'.$user_data['user_id']. $user_data['name'].'/', 200, 200, $user_data['user_id'], $user_data['profile_pic']);
+$profile_pic = $user_data['profile_pic'] == '' ? base_url().'/assets/images/default.png' : image_thumb(base_url().'/uploads/gallery/'.$user_data['user_id']. $user_data['name'].'/', 200, 200, $user_data['user_id'], $user_data['profile_pic']);
 
-$full_profile_pic = $user_data['profile_pic'] == '' ? base_url().'assets/images/default.png' : image_thumb('uploads/gallery/'.$user_data['user_id']. $user_data['name'].'/', 600, 600, $user_data['user_id'], $user_data['profile_pic']);
+$full_profile_pic = $user_data['profile_pic'] == '' ? base_url().'/assets/images/default.png' : image_thumb(base_url().'/uploads/gallery/'.$user_data['user_id']. $user_data['name'].'/', 600, 600, $user_data['user_id'], $user_data['profile_pic']);
 
 if(isset($logged_in) && $logged_in==true)
 {
@@ -15,7 +15,7 @@ if(isset($logged_in) && $logged_in==true)
 }
 else
 {
-	$favorite_url = 'window.location.href = "'.base_url().'home/sign_up";'; 
+	$favorite_url = 'window.location.href = "'.base_url().'/home/sign_up";';
 	$favorite = '';
 	echo view('includes/login-message');
 }
@@ -37,7 +37,7 @@ else
 	</div>
 	<div class="widget profile-menu">
 		<ul>
-			<li class="current"><?php echo anchor('user/gallery/'.$user_data['user_id'],'Photo Gallery');?></li>
+			<li class="current"><?php echo anchor('/user/gallery/'.$user_data['user_id'],'Photo Gallery');?></li>
 		</ul>
 	</div>
 
@@ -60,7 +60,7 @@ else
 		<div class="widget profile-menu">
 			<ul>
 				<?php //echo '<pre>';print_r($is_interest_friend);exit;
-				if(count($is_interest_friend))
+				if($is_interest_friend)
 				{// print_r($is_interest_friend); die;
 					if($is_interest_friend['status_interest']==1)
 					{
@@ -101,7 +101,7 @@ else
 		<ul>
 			<li class="current">
 				<?php 
-				if(count($abused))
+				if($abused)
 				{
 					echo '<span style="color: #f17b97;">Abused Reported</span>';
 				}
@@ -118,7 +118,7 @@ else
 <div class="full-profile fivecol column">
 	<div class="section-title">
 		<h2>
-			<a href="user/profile/<?php echo  $user_data['user_id'];?>">
+			<a href="/user/profile/<?php echo  $user_data['user_id'];?>">
 				<?php echo $user_data['name'].' '.$user_data['last_name'];?> (id: <?php echo $user_data['user_id'];?>)
 			</a>
 		</h2>

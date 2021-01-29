@@ -7,18 +7,20 @@ use App\Models\UserModel;
 
 class User extends BaseController
 {
-    var $user_data = '';
+    protected $user_data = '';
     protected $user_model;
     protected $commonmodel;
+    protected $db;
+    protected $session;
 
     public function __construct()
     {
 
-        $db = \Config\Database::connect();
-        $this->commonmodel = new CommonModel($db);
-        $this->user_model = new UserModel($db);
-        $session = session();
-        $this->user_data = $session->get('user_data');
+        $this->db = \Config\Database::connect();
+        $this->commonmodel = new CommonModel($this->db);
+        $this->user_model = new UserModel($this->db);
+        $this->session = session();
+        $this->user_data = $this->session->get('user_data');
 
         helper(array('url', 'form', 'image_helper'));
 
@@ -37,8 +39,9 @@ class User extends BaseController
         if ($this->commonmodel->isLoggedIn()) {
             return true;
         } else {
-            $this->session->sess_destroy();
-            redirect('home/sign_up');
+            $this->session->destroy();
+
+            return redirect()->to(base_url().'/home/sign_up');
         }
     }
 
@@ -47,19 +50,19 @@ class User extends BaseController
         $this->check_auth();
         $data['logged_in'] = true;
 
-        $this->db->select('u.user_id, u.name, u.last_name, u.profile_pic, u.is_deleted')
-            ->from('user u')
+
+        $rs = $this->db->table('user as u')
+            ->select('u.user_id, u.name, u.last_name, u.profile_pic, u.is_deleted')
             ->join('favorites f', 'u.user_id = f.favorite_user_id')
             ->where('f.user_id', $this->user_data['user_id'])
             ->where('u.is_deleted =', 0)
             ->limit(3);
 
-        $rs = $this->db->get();
-        $data['favorites'] = $rs->result_array();
+        $data['favorites'] =$rs->get()->getResultArray();
 
-        $data['photos'] = $this->commonmodel->getRecords('photo', '', array("user_id" => $this->session->userdata('user_id')));
+        $data['photos'] = $this->commonmodel->getRecords('photo', '', array("user_id" => $this->user_data['user_id']));
 
-        $data['user_data'] = $this->session->userdata('user_data');
+        $data['user_data'] = $this->user_data;
         echo view('includes/header2', $data);
         echo view('my-profile');
         echo view('includes/footer');
@@ -91,9 +94,10 @@ class User extends BaseController
     {
         $this->check_auth();
 
-        $post_data = $this->input->post(NULL);
+        $post_data = $this->request->getPost();
+
         //$data['user_data'] = $user_data = $this->user_data;
-        $user_id = $this->session->userdata('user_id');
+        $user_id = $this->session->get('user_id');
 
         $date = str_replace('/', '-', $post_data['dob']);
         $post_data['dob'] = date('Y-m-d H:i:s', strtotime($date));
@@ -104,9 +108,9 @@ class User extends BaseController
 
         $this->commonmodel->addEditRecords('user', $post_data, $user_id);
         $user_data = $this->commonmodel->getRecords('user', '', array("user_id" => $user_id), '', true);
-        $this->session->set_userdata('user_data', $user_data);
+        $this->session->set('user_data', $user_data);
 
-        redirect('user/my_profile');
+        return redirect()->to(base_url().'/user/my_profile');
     }
 
     public function update_profile_pic()
@@ -121,7 +125,7 @@ class User extends BaseController
         }
 
         $img_name = "klr_img_" . uniqid() . ".jpg";
-        $img = $this->input->post('user_avatar');
+        $img = $this->request->getPost('user_avatar');
         $img = str_replace('data:image/png;base64,', '', $img);
         $img = str_replace('data:image/jpeg;base64,', '', $img);
         $img = str_replace(' ', '+', $img);
@@ -132,9 +136,12 @@ class User extends BaseController
         $post_data['profile_pic'] = $img_name;
         $this->commonmodel->addEditRecords('user', $post_data, $this->user_data['user_id']);
         $old_img = IMG_PATH . $this->user_data['user_id'] . $this->user_data['name'] . '/' . $this->user_data['profile_pic'];
-        unlink($old_img);
+        if($this->user_data['profile_pic']) {
+            unlink($old_img);
+        }
         $user_data = $this->commonmodel->getRecords('user', '', array("user_id" => $this->user_data['user_id']), '', true);
-        $this->session->set_userdata('user_data', $user_data);
+        $this->session->set('user_data', $user_data);
+
         echo 'success';
         //redirect('user/my_profile');
     }
@@ -153,12 +160,16 @@ class User extends BaseController
         $data['photos'] = $this->commonmodel->getRecords('photo', '', array("user_id" => $user_id));
 
         $data['user_data'] = $this->commonmodel->getRecords('user', '', array("user_id" => $user_id, "is_active" => 1, "is_deleted" => 0), '', true);
+//		echo '<pre>' ;
+//		echo($this->db->getLastQuery());
+//		exit;
+//        echo '<pre>'; print_r($data);die;
 
         $age = date_diff(date_create($data['user_data']['dob']), date_create('today'))->y;
         $data['title'] = "Name - " . $data['user_data']['name'] . "," . " " . "Age - " . $age . "," . " " . "City - " . $data['user_data']['city'];
 
         $data['abused'] = $this->commonmodel->getRecords('report_abuse', '', array("abused_user_id" => $user_id), '', true);
-
+//        echo '<pre>'; print_r($data);die;
         if (!count($data['user_data'])) {
             redirect('home/search');
         }
@@ -180,7 +191,8 @@ class User extends BaseController
         $user_id = $this->session->userdata('user_id');
         $token = rand(10000, 99999);
         $this->commonmodel->addEditRecords('user', array('token' => $token), $user_id);
-        $this->session->sess_destroy();
+        $this->session->destroy();
+
         redirect('home');
     }
 
@@ -264,7 +276,7 @@ class User extends BaseController
     {
         $this->check_auth();
 
-        $favorite_user_id = $this->input->post('favorite_user_id');
+        $favorite_user_id = $this->request->getPost('favorite_user_id');
 
         $fav_data = $this->commonmodel->getRecords('favorites', '', array("user_id" => $this->user_data['user_id'], "favorite_user_id" => $favorite_user_id));
         if (count($fav_data)) {
@@ -282,12 +294,11 @@ class User extends BaseController
     {
         $this->check_auth();
 
-        $this->db->select('u.user_id, u.name, u.last_name, u.profile_pic')
-            ->from('user u')
+        $rs = $this->db->table('user u')
+            ->select('u.user_id, u.name, u.last_name, u.profile_pic')
             ->join('favorites f', 'u.user_id = f.favorite_user_id')
             ->where('f.user_id', $this->user_data['user_id']);
-        $rs = $this->db->get();
-        $data['favorites'] = $rs->result_array();
+        $data['favorites'] = $rs->get()->getResultArray();
 
         //$data['favorites'] = $this->commonmodel->getRecords('user', 'user_id,name,last_name,profile_pic', array("gender"=>'Male'));
         echo view('includes/header2');
@@ -313,13 +324,13 @@ class User extends BaseController
     public function add_delete_photo()
     {
         $this->check_auth();
-        $post_data = $this->input->post();
+        $post_data = $this->request->getPost();
 
         if (isset($post_data['photo_id'])) {
             $this->commonmodel->deleteRecords('photo', "user_id = " . $this->user_data['user_id'] . " AND photo_id = " . $post_data['photo_id']);
             $old_img = IMG_PATH . $this->user_data['user_id'] . $this->user_data['name'] . '/' . $post_data['photo'];
             unlink($old_img);
-            redirect('user/gallery/' . $this->user_data['user_id']);
+            return redirect()->to(base_url().'/user/gallery/' . $this->user_data['user_id']);
         }
 
         $userDir = IMG_PATH . $this->user_data['user_id'] . $this->user_data['name'];
@@ -329,7 +340,7 @@ class User extends BaseController
         }
 
         $img_name = "klr_img_" . uniqid() . ".jpg";
-        $img = $this->input->post('user_avatar');
+        $img = $this->request->getPost('user_avatar');
         $img = str_replace('data:image/png;base64,', '', $img);
         $img = str_replace('data:image/jpeg;base64,', '', $img);
         $img = str_replace(' ', '+', $img);
@@ -369,20 +380,20 @@ class User extends BaseController
     public function set_interest_privacy()
     {
         $this->check_auth();
-        $rdn_val = $this->input->post('rdn_val');
+        $rdn_val = $this->request->getPost('rdn_val');
 
         $user_id = $this->user_data['user_id'];
         $arr = array('interest_privacy' => $rdn_val);
         $this->commonmodel->addEditRecords('user', $arr, $user_id);
 
         $this->user_data['interest_privacy'] = $rdn_val;
-        $this->session->set_userdata('user_data', $this->user_data);
+        $this->session->set('user_data', $this->user_data);
     }
 
     public function interest_send()
     {
         $this->check_auth();
-        $interest_user_id = $this->input->post('interest_user_id');
+        $interest_user_id = $this->request->getPost('interest_user_id');
         $user_id = $this->user_data['user_id'];
         $arr = array(
             'sender_id' => $user_id,
@@ -407,7 +418,7 @@ class User extends BaseController
         $user_id = $this->user_data['user_id'];
         $data['users'] = $this->user_model->user_interest_detail($user_id);
         if (!$data['users']) {
-            $this->session->set_flashdata('interest_messagey', 'No Interest User...');
+            $this->session->setFlashdata('interest_messagey', 'No Interest User...');
         }
         //echo '<pre>';print_r($data['users']);print_r($data['users1']);exit;
 
@@ -418,7 +429,7 @@ class User extends BaseController
 
     public function accept_interest()
     {
-        $accept_id = $this->input->post('accept_id');
+        $accept_id = $this->request->getPost('accept_id');
         $user_id = $this->user_data['user_id'];
 
         $condition = array(
@@ -432,7 +443,7 @@ class User extends BaseController
 
     public function archive_interest()
     {
-        $archive_id = $this->input->post('archive_id');
+        $archive_id = $this->request->getPost('archive_id');
         $user_id = $this->user_data['user_id'];
         $condition = array(
             'receiver_id' => $user_id,
@@ -480,17 +491,17 @@ class User extends BaseController
 
     public function filter_record()
     {
-        // $post_data = $this->input->post();
+        // $post_data = $this->request->getPost();
         // $passwd = trim($post_data["age_from"]);
         // print_r($passwd);
         $user_id = $this->user_data['user_id'];
-        $age_from = $this->input->post('age_from');
-        $age_to = $this->input->post('age_to');
-        $gender = $this->input->post('gender');
-        $merital_status = $this->input->post('merital_status');
-        $manglik = $this->input->post('manglik');
-        $qualification = $this->input->post('qualification');
-        $annual_income = $this->input->post('annual_income');
+        $age_from = $this->request->getPost('age_from');
+        $age_to = $this->request->getPost('age_to');
+        $gender = $this->request->getPost('gender');
+        $merital_status = $this->request->getPost('merital_status');
+        $manglik = $this->request->getPost('manglik');
+        $qualification = $this->request->getPost('qualification');
+        $annual_income = $this->request->getPost('annual_income');
 
         $array_data = array(
             'filter_age_from' => $age_from,
@@ -513,7 +524,7 @@ class User extends BaseController
         $this->user_data['filter_qualification'] = $qualification;
         $this->user_data['filter_annual_income'] = $annual_income;
 
-        $this->session->set_userdata('user_data', $this->user_data);
+        $this->session->set('user_data', $this->user_data);
 
     }
 

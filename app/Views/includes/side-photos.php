@@ -27,7 +27,7 @@
 				{
 					$last = '';
 				}
-				$img_thumb = image_thumb('uploads/gallery/'.$user_data['user_id']. $user_data['name'].'/', 200, 200, $user_data['user_id'], $photo['photo']);
+				$img_thumb = image_thumb($user_data['user_id']. $user_data['name'].'/', 200, 200, $user_data['user_id'], $photo['photo']);
 			?>
 				<div class="fourcol static-column <?php echo $last;?>">
 					<div class="profile-preview widget-profile">
@@ -35,7 +35,7 @@
 							<?php
 							if(isset($logged_in) && $logged_in==true)
 							{
-								$full_img = image_thumb('uploads/gallery/'.$user_data['user_id']. $user_data['name'].'/', 600, 600, $user_data['user_id'], $photo['photo']);
+								$full_img = image_thumb($user_data['user_id']. $user_data['name'].'/', 600, 600, $user_data['user_id'], $photo['photo']);
 							?>
 							<a href="<?php echo $full_img;?>" data-size="600x600" data-med="<?php echo $full_img;?>" data-med-size="600x600" >
 							<?php

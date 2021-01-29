@@ -9,7 +9,6 @@
 <!--<div class="column eightcol user-list" id="interest_user_list">-->
 	<div class="profiles-listing clearfix">
 		<div id="user-list">
-			<!-- <?php// echo view('user-list');?> -->
 			<?php
             if(count($users))
             {

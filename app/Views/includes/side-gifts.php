@@ -8,7 +8,7 @@
 						<li style="display: list-item;" class="clearfix current">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -16,7 +16,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -24,7 +24,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -32,7 +32,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -42,7 +42,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -50,7 +50,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -58,7 +58,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -66,7 +66,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -76,7 +76,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -84,7 +84,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -92,7 +92,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -100,7 +100,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -110,7 +110,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -118,7 +118,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -126,7 +126,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -134,7 +134,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -144,7 +144,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -152,7 +152,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -160,7 +160,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -168,7 +168,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -178,7 +178,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -186,7 +186,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -194,7 +194,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -202,7 +202,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -212,7 +212,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -220,7 +220,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -228,7 +228,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -236,7 +236,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -246,7 +246,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-47.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-47.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -254,7 +254,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-47.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-47.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -262,7 +262,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -270,7 +270,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -280,7 +280,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -288,7 +288,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -296,7 +296,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -304,7 +304,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -314,7 +314,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -322,7 +322,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -330,7 +330,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -338,7 +338,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-47.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-47.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -348,7 +348,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -356,7 +356,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -364,7 +364,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -372,7 +372,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -382,7 +382,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -390,7 +390,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -398,7 +398,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -406,7 +406,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -416,7 +416,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -424,7 +424,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -432,7 +432,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-47.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-47.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -440,7 +440,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -450,7 +450,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -458,7 +458,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -466,7 +466,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -474,7 +474,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -484,7 +484,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -492,7 +492,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -500,7 +500,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -508,7 +508,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -518,7 +518,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -526,7 +526,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -534,7 +534,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -542,7 +542,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -552,7 +552,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -560,7 +560,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -568,7 +568,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -576,7 +576,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -586,7 +586,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -594,7 +594,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -602,7 +602,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -610,7 +610,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -620,7 +620,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -628,7 +628,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -636,7 +636,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -644,7 +644,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -654,7 +654,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -662,7 +662,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -670,7 +670,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -678,7 +678,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -688,7 +688,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -696,7 +696,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -704,7 +704,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -712,7 +712,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -722,7 +722,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -730,7 +730,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -738,7 +738,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -746,7 +746,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -756,7 +756,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -764,7 +764,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -772,7 +772,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -780,7 +780,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -790,7 +790,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -798,7 +798,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -806,7 +806,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -814,7 +814,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -824,7 +824,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -832,7 +832,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -840,7 +840,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -848,7 +848,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -858,7 +858,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -866,7 +866,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -874,7 +874,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -882,7 +882,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -892,7 +892,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -900,7 +900,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -908,7 +908,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -916,7 +916,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -926,7 +926,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -934,7 +934,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -942,7 +942,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -950,7 +950,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -960,7 +960,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -968,7 +968,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -976,7 +976,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -984,7 +984,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -994,7 +994,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1002,7 +1002,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1010,7 +1010,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1018,7 +1018,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1028,7 +1028,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1036,7 +1036,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1044,7 +1044,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1052,7 +1052,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1062,7 +1062,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1070,7 +1070,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1078,7 +1078,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1086,7 +1086,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1096,7 +1096,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1104,7 +1104,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1112,7 +1112,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1120,7 +1120,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1130,7 +1130,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1138,7 +1138,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1146,7 +1146,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1154,7 +1154,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1164,7 +1164,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-47.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-47.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1172,7 +1172,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1180,7 +1180,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1188,7 +1188,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1198,7 +1198,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1206,7 +1206,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1214,7 +1214,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1222,7 +1222,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1232,7 +1232,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1240,7 +1240,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1248,7 +1248,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1256,7 +1256,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1266,7 +1266,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1274,7 +1274,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1282,7 +1282,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1290,7 +1290,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1300,7 +1300,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1308,7 +1308,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1316,7 +1316,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1324,7 +1324,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1334,7 +1334,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1342,7 +1342,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1350,7 +1350,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1358,7 +1358,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1368,7 +1368,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1376,7 +1376,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1384,7 +1384,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1392,7 +1392,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1402,7 +1402,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1410,7 +1410,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1418,7 +1418,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1426,7 +1426,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1436,7 +1436,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1444,7 +1444,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-47.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-47.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1452,7 +1452,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1460,7 +1460,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1470,7 +1470,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1478,7 +1478,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1486,7 +1486,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1494,7 +1494,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1504,7 +1504,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1512,7 +1512,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1520,7 +1520,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1528,7 +1528,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1538,7 +1538,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1546,7 +1546,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1554,7 +1554,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1562,7 +1562,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1572,7 +1572,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1580,7 +1580,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1588,7 +1588,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1596,7 +1596,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1606,7 +1606,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1614,7 +1614,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1622,7 +1622,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1630,7 +1630,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1640,7 +1640,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-47.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-47.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1648,7 +1648,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1656,7 +1656,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1664,7 +1664,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1674,7 +1674,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1682,7 +1682,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1690,7 +1690,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1698,7 +1698,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1708,7 +1708,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1716,7 +1716,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1724,7 +1724,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1732,7 +1732,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1742,7 +1742,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1750,7 +1750,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1758,7 +1758,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1766,7 +1766,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-47.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-47.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1776,7 +1776,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1784,7 +1784,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1792,7 +1792,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1800,7 +1800,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1810,7 +1810,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1818,7 +1818,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1826,7 +1826,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1834,7 +1834,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1844,7 +1844,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1852,7 +1852,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1860,7 +1860,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1868,7 +1868,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1878,7 +1878,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1886,7 +1886,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1894,7 +1894,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1902,7 +1902,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1912,7 +1912,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1920,7 +1920,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1928,7 +1928,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1936,7 +1936,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1946,7 +1946,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1954,7 +1954,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1962,7 +1962,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1970,7 +1970,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1980,7 +1980,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1988,7 +1988,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -1996,7 +1996,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2004,7 +2004,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2014,7 +2014,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2022,7 +2022,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2030,7 +2030,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2038,7 +2038,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2048,7 +2048,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2056,7 +2056,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-47.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-47.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2064,7 +2064,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2072,7 +2072,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2082,7 +2082,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2090,7 +2090,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2098,7 +2098,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2106,7 +2106,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2116,7 +2116,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2124,7 +2124,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2132,7 +2132,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2140,7 +2140,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/george" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">jason smith</span>
 						</span>
@@ -2150,7 +2150,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/maggie" class="tooltip">
-						<img src="assets/images/image-45.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-45.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">Maggie Wallace</span>
 						</span>
@@ -2158,7 +2158,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/helen" class="tooltip">
-						<img src="assets/images/image-44.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-44.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">Helen Kingston</span>
 						</span>
@@ -2166,7 +2166,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/edward" class="tooltip">
-						<img src="assets/images/image-43.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-43.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">Edward Boulton</span>
 						</span>
@@ -2174,7 +2174,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/regina" class="tooltip">
-						<img src="assets/images/image-46.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-46.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">Regina Pollard</span>
 						</span>
@@ -2184,7 +2184,7 @@
 						<li class="clearfix">
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/sandra" class="tooltip">
-						<img src="assets/images/image-47.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-47.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">Sandra Switzer</span>
 						</span>
@@ -2192,7 +2192,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/sandra" class="tooltip">
-						<img src="assets/images/image-50.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-50.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">Sandra Switzer</span>
 						</span>
@@ -2200,7 +2200,7 @@
 				</div>
 							<div class="threecol static-column ">
 					<a href="http://themextemplates.com/demo/lovestory/profile/frank" class="tooltip">
-						<img src="assets/images/image-49.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-49.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">Frank Chapman</span>
 						</span>
@@ -2208,7 +2208,7 @@
 				</div>
 							<div class="threecol static-column last">
 					<a href="http://themextemplates.com/demo/lovestory/profile/edward" class="tooltip">
-						<img src="assets/images/image-48.jpg" class="fullwidth" alt="">
+						<img src="<?php echo base_url();?>/assets/images/image-48.jpg" class="fullwidth" alt="">
 						<span class="tooltip-wrap">
 							<span class="tooltip-text">Edward Boulton</span>
 						</span>

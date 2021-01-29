@@ -22,7 +22,7 @@
 				<div class="header-content-wrap">
 					<div class="header-content container">
 						<div align="right">
-							<form class="page-title" action="" onSubmit="window.location.href = site_url+'user/profile/'+jQuery('#search_by_id').val(); return false;">
+							<form class="page-title" action="" onSubmit="window.location.href = site_url+'/user/profile/'+jQuery('#search_by_id').val(); return false;">
 								Find member Id <input id="search_by_id" style="margin:0px;"/>
 							</form>
 						</div>

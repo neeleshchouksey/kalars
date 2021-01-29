@@ -3,7 +3,7 @@ if(isset($logged_in) && $logged_in==true)
 {
 ?>
 <div class="widget clearfix">
-	<a href="<?php echo base_url().'user/favorites';?>">
+	<a href="<?php echo base_url().'/user/favorites';?>">
 		<h4 class="widget-title clearfix">
 			<span class="left">Favorites</span>
 		</h4>
@@ -28,13 +28,13 @@ if(isset($logged_in) && $logged_in==true)
 				{
 					$last = '';
 				}
-				$img_src = $row['profile_pic'] == '' ? base_url().'assets/images/default.png' :  image_thumb('uploads/gallery/'.$row['user_id']. $row['name'].'/', 200, 200, $row['user_id'], $row['profile_pic']);
+				$img_src = $row['profile_pic'] == '' ? base_url().'/assets/images/default.png' :  image_thumb('uploads/gallery/'.$row['user_id']. $row['name'].'/', 200, 200, $row['user_id'], $row['profile_pic']);
 
 			?>
 				<div class="fourcol static-column <?php echo $last;?>">
 					<div>
 						<div>
-							<a href="<?php echo base_url().'user/profile/'.$row['user_id'];?>"  data-group="photos">
+							<a href="<?php echo base_url().'/user/profile/'.$row['user_id'];?>"  data-group="photos">
 								<img src="<?php echo $img_src;?>" class="fullwidth" alt="">
 							</a>
 						</div>

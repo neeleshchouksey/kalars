@@ -23,7 +23,7 @@
 				$last="last";$count=0;
 			}
 
-			$profile_pic = $row['profile_pic'] == '' ? base_url().'assets/images/default.png' :  image_thumb('uploads/gallery/'.$row['user_id']. $row['name'].'/', 200, 200, $row['user_id'], $row['profile_pic']);
+			$profile_pic = $row['profile_pic'] == '' ? base_url().'/assets/images/default.png' :  image_thumb($row['user_id']. $row['name'].'/', 200, 200, $row['user_id'], $row['profile_pic']);
 
 			if(isset($logged_in) && $logged_in==true)
 			{
@@ -34,14 +34,14 @@
 		<div class="column fourcol <?php echo $last;?>">
 			<div class="profile-preview">
 				<div class="profile-image">
-					<a href="<?php echo base_url().'user/profile/'.$row['user_id'];?>">
+					<a href="<?php echo base_url().'/user/profile/'.$row['user_id'];?>">
 						<img src="<?php echo $profile_pic;?>" class="avatar" alt="" width="200">
 					</a>
 				</div>
 				<div class="profile-text">
 					<h5>
 						<!-- <span title="Online" class="profile-status online"></span> -->
-						<a href="<?php echo base_url().'user/profile/'.$row['user_id'];?>"><?php echo $row['name'];?> <?php echo $row['last_name'];?></a>
+						<a href="<?php echo base_url().'/user/profile/'.$row['user_id'];?>"><?php echo $row['name'];?> <?php echo $row['last_name'];?></a>
 					</h5>
 					<!-- <p>25 years old man from Berlin, Germany</p> -->
 				</div>

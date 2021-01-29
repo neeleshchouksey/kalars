@@ -7,15 +7,15 @@ class Home extends BaseController
 {
 	var $user_data	= '';
 	protected $commonmodel;
+	protected $db;
+	protected $session;
 	public function __construct()
 	{
 
-            $db = \Config\Database::connect();
-            $this->commonmodel = new CommonModel($db);
-            $session = session();
-            $this->user_data = $session->get('user_data');
-            $this->user_data = $session->get('user_data');
-
+            $this->db = \Config\Database::connect();
+            $this->commonmodel = new CommonModel($this->db);
+            $this->session = session();
+            $this->user_data = $this->session->get('user_data');
             helper(array('url', 'form', 'image_helper', 'sms_helper'));
 
 	}
@@ -52,7 +52,7 @@ class Home extends BaseController
 
 	public function register_user()
 	{ 
-		$post_data = $this->input->post();
+		$post_data =  $this->request->getPost();
 		if(trim($post_data['phone_no']) == '' || trim($post_data['name']) == '' || trim($post_data['last_name']) == '')
 		{
 			echo 'error';
@@ -61,7 +61,7 @@ class Home extends BaseController
 
 		$user_data = $this->commonmodel->getRecords('user','user_id',array("phone_no"=>$post_data['phone_no']),'',true);
 		//echo '<pre>';print_r($post_data);exit;
-		if(count($user_data))
+		if($user_data)
 		{
 			echo 'exist';
 			exit;
@@ -71,11 +71,8 @@ class Home extends BaseController
 		$post_data['token'] = $token = rand(100000,999999);
 		//$post_data['is_active'] = 1;
 		$this->commonmodel->addEditRecords('user', $post_data);
-		$user_id = $this->db->insert_id();
+		$user_id = $this->db->insertID();
 
-		
-
-		session_start();
 		if (isset($_SESSION['registered_image'])) 
 		{
 			$update_data['profile_pic'] = $img_name = "klr_img_".uniqid().".jpg";
@@ -110,12 +107,13 @@ class Home extends BaseController
 	}
 
 	public function success()
-	{ 
-		$token = $this->input->post('token');
+	{
+
+		$token = $this->request->getPost('token');
 		$user_data = $this->commonmodel->getRecords('user','user_id',array("token"=>$token),'',true);
-		
+
 		$data['success'] = 0;
-		if(count($user_data))
+		if($user_data)
 		{
 			$token = rand(10000,99999); 
 			$this->commonmodel->addEditRecords('user', array('token'=>$token,'is_active'=>1), $user_data['user_id']);
@@ -139,11 +137,11 @@ class Home extends BaseController
 		}
 		
 
-		if(count($user_data))
+		if($user_data)
 		{
-			$this->session->set_userdata('user_id', $user_data['user_id']);
-			$this->session->set_userdata('phone_no', $user_data['phone_no']);
-			$this->session->set_userdata('user_data', $user_data);
+			$this->session->set('user_id', $user_data['user_id']);
+			$this->session->set('phone_no', $user_data['phone_no']);
+			$this->session->set('user_data', $user_data);
 			$this->commonmodel->addEditRecords('user', array('last_login'=>date('Y-m-d H:i:s')), $user_data['user_id']);
 		}
 		redirect('user/my_profile');
@@ -151,15 +149,15 @@ class Home extends BaseController
 
 	public function login()
 	{ 
-		$phone_no = $this->input->post('phone_no');
-		$password = md5($this->input->post('password'));
+		$phone_no =  $this->request->getPost('phone_no');
+		$password = md5($this->request->getPost('password'));
 		$user_data = $this->commonmodel->getRecords('user', '', array("phone_no"=>$phone_no, "password"=>$password, "is_active"=>1),'',true);
 		//$user_data = $this->commonmodel->getRecords('user', '', array("phone_no"=>$phone_no, "is_active"=>1),'',true);
-		if(count($user_data))
+		if($user_data)
 		{
-			$this->session->set_userdata('user_id', $user_data['user_id']);
-			$this->session->set_userdata('phone_no', $phone_no);
-			$this->session->set_userdata('user_data', $user_data);
+			$this->session->set('user_id', $user_data['user_id']);
+			$this->session->set('phone_no', $phone_no);
+			$this->session->set('user_data', $user_data);
 			$this->commonmodel->addEditRecords('user', array('last_login'=>date('Y-m-d H:i:s')), $user_data['user_id']);
 			$data['user_agent'] = 0;
 			$user_agent = $_SERVER['HTTP_USER_AGENT'];
@@ -181,11 +179,18 @@ class Home extends BaseController
 
 	public function signout()
 	{ 
-		$user_id = $this->session->userdata('user_id');
-		$token = rand(10000,99999); 
-		$this->commonmodel->addEditRecords('user', array('token'=>$token), $user_id);
-		$this->session->sess_destroy();
-		redirect('home');
+		$user = $this->session->get('user_data');
+		if($user) {
+            $user_id = $user['user_id'];
+            $token = rand(10000, 99999);
+            $this->commonmodel->addEditRecords('user', array('token' => $token), $user_id);
+            $this->session->destroy();
+
+            return redirect()->to(base_url().'/home');
+
+        }else{
+            return redirect()->to(base_url().'/home');
+        }
 	}
 
 	public function forget_password()
@@ -256,7 +261,7 @@ class Home extends BaseController
 			}
 		}
 
-		$data['post_data'] = $post_data  = $this->input->post();
+		$data['post_data'] = $post_data  = $this->request->getPost();
 		//echo '<pre>'; print_r($post_data);///exit;
 
 		$condition = array();
@@ -289,9 +294,12 @@ class Home extends BaseController
 		if(isset($post_data['employement_status']) && trim($post_data['employement_status']) !='' && trim($post_data['employement_status']) !=NULL) 
 			$condition['employement_status'] = $post_data['employement_status'];
 
-		//echo '<pre>'; print_r($condition);exit;
+//		echo '<pre>'; print_r($condition);exit;
 		$data['filtered_user_data'] = $this->commonmodel->getRecords('user', 'user_id,name,last_name,profile_pic', $condition);
-		//echo '<pre>'; print_r($data['filtered_user_data']);exit;
+//		echo '<pre>' ;
+//		echo($this->db->getLastQuery());
+//		exit;
+//		echo '<pre>'; print_r($data['filtered_user_data']);exit;
 
 		echo view('includes/header2');
 		echo view('search_results', $data);

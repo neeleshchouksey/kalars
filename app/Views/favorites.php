@@ -42,8 +42,8 @@
 				</div>
 				<div class="profile-options popup-container clearfix">
 					<div class="profile-option" onClick="markfavorites('<?php echo $row['user_id'];?>');">
-						<span style="float:left">Mark Favorite</span>
-						<a href="javascript:void(0);" title="Favorites" data-title="Favorites" class="icon-heart submit-button favorite" id="favorite-<?php echo $row['user_id'];?>"  style="float:right"></a>
+<!--						<span style="float:left">Mark Favorite</span>-->
+						<a href="javascript:void(0);" title="Favorites" data-title="Favorites" class="icon-heart submit-button favorite" id="favorite-<?php echo $row['user_id'];?>" ></a>
 					</div>
 					<!-- <div class="profile-option">
 						<a href="javascript:markfavorites('<?php echo $row['user_id'];?>');" title="Favorites" data-title="Favorites" class="icon-heart submit-button favorite" id="favorite-<?php echo $row['user_id'];?>"></a>

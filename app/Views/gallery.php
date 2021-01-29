@@ -23,9 +23,9 @@
 				$last="last";$count=0;
 			}
 			
-			$profile_pic = !isset($photos[$i]) ? base_url().'assets/images/default.png' :  image_thumb('uploads/gallery/'.$profile_user_data['user_id']. $profile_user_data['name'].'/', 600, 600, $profile_user_data['user_id'], $photos[$i]['photo']);
+			$profile_pic = !isset($photos[$i]) ? base_url().'/assets/images/default.png' :  image_thumb($profile_user_data['user_id']. $profile_user_data['name'].'/', 600, 600, $profile_user_data['user_id'], $photos[$i]['photo']);
 
-			$profile_pic_thumb = !isset($photos[$i]) ? base_url().'assets/images/default.png' :  image_thumb('uploads/gallery/'.$profile_user_data['user_id']. $profile_user_data['name'].'/', 200, 200, $profile_user_data['user_id'], $photos[$i]['photo']);
+			$profile_pic_thumb = !isset($photos[$i]) ? base_url().'/assets/images/default.png' :  image_thumb($profile_user_data['user_id']. $profile_user_data['name'].'/', 200, 200, $profile_user_data['user_id'], $photos[$i]['photo']);
 
 		?>
 		<div class="column fourcol <?php echo $last;?>">
@@ -47,7 +47,7 @@
 						?>
 							<label for="upload" class="button small">Add Photo</label>
 							<input type="file" name="user_avatar" id="upload" value="Choose a file" class="shifted" accept="image/*" />
-							<a href="user/gallery/<?php echo $profile_user_data['user_id'];?>#comming_soon" id="hit" style="display:none;">
+							<a href="<?php echo base_url();?>/user/gallery/<?php echo $profile_user_data['user_id'];?>#comming_soon" id="hit" style="display:none;">
 								<p>&nbsp;&nbsp;</p>
 							</a>
 						<?php
@@ -90,10 +90,10 @@
 
 
 <!---Photo Crop-->
-<script src="assets/crop/js/jquery.min.js"></script>
-<script src="assets/crop/js/sweetalert.min.js"></script>
-<script src="assets/crop/js/croppie.js"></script>
-<script src="assets/crop/js/demo.js"></script>
+<script src="<?php echo base_url();?>/assets/crop/js/jquery.min.js"></script>
+<script src="<?php echo base_url();?>/assets/crop/js/sweetalert.min.js"></script>
+<script src="<?php echo base_url();?>/assets/crop/js/croppie.js"></script>
+<script src="<?php echo base_url();?>/assets/crop/js/demo.js"></script>
 <script>
 	Demo.init();
 </script>

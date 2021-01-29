@@ -5,7 +5,7 @@
 
 <h2>Advanced Search</h2>
 
-<form name="search_form" action="<?php echo base_url().'home/search_results';?>"method="POST" class="adv_search_form">
+<form name="search_form" action="<?php echo base_url().'/home/search_results';?>"method="POST" class="adv_search_form">
 	<table class=''>
 		<tbody>
 			<tr>

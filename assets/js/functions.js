@@ -89,7 +89,7 @@ function register_user()
 		data = 'name='+name+'&last_name='+last_name+'&phone_no='+phone_no+'&password='+password+'&gender='+gender;
 		jQuery.ajax({
 			type: "POST",
-			url: site_url + "home/register_user",
+			url: site_url + "/home/register_user",
 			data: data,
 			success: function (data){ 
 				if (data == "error")
@@ -104,7 +104,7 @@ function register_user()
 				}
 				else
 				{
-					window.location=site_url + "home/verify_no";
+					window.location=site_url + "/home/verify_no";
 				}
 			}
 		});
@@ -152,7 +152,7 @@ function forget_password()
 		data = 'phone_no='+phone_no;
 		jQuery.ajax({
 			type: "POST",
-			url: site_url + "home/forget_password",
+			url: site_url + "/home/forget_password",
 			data: data,
 			success: function (data)
 			{ 
@@ -163,7 +163,7 @@ function forget_password()
 				}
 				else if(data == "forget_success")
 				{
-					window.location=site_url + "home/change_password";
+					window.location=site_url + "/home/change_password";
 				}
 			}
 		});
@@ -175,7 +175,7 @@ function markfavorites(favorite_user_id)
 	data = 'favorite_user_id='+favorite_user_id;
 	jQuery.ajax({
 		type: "POST",
-		url: site_url + "user/markfavorites",
+		url: site_url + "/user/markfavorites",
 		data: data,
 		success: function (data)
 		{ 
@@ -194,7 +194,7 @@ function markfavorites(favorite_user_id)
 function search_by_id()
 { 
 	alert('in');return;
-	window.location.href = site_url+'user/profile/'+jQuery('#search_by_id').val(); 
+	window.location.href = site_url+'/user/profile/'+jQuery('#search_by_id').val();
 	alert('in');
 	phRegExp = "[^0-9\]";
 	user_id = jQuery('#search_by_id').val();
@@ -205,7 +205,7 @@ function search_by_id()
 		//err=1;
 		return false;
 	}
-	window.location.href = site_url+'user/profile/'+user_id; 
+	window.location.href = site_url+'/user/profile/'+user_id;
 }
 
 

@@ -1,4 +1,4 @@
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- kalars.in -->
 <ins class="adsbygoogle"
 	 style="display:inline-block;width:300px;height:600px"
@@ -11,7 +11,7 @@
 <div class="widget widget_themex_advert mobile-hidden">
 	<div class="bordered-image sidebar-widget">
 		<a href="http://newshringarika.com" target="_blank">
-			<img src="assets/images/image.jpg" class="fullwidth" alt="">
+			<img src="<?php echo base_url();?>/assets/images/image.jpg" class="fullwidth" alt="">
 		</a>
 	</div>
 </div>

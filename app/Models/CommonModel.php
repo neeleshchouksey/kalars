@@ -23,26 +23,25 @@ class CommonModel extends Model
 
     function getRecords($table, $fields="", $condition="", $orderby="", $single_row=false) //$condition is array
     {
-//		if($fields != "")
-//		{
-//			$this->db->select($fields);
-//		}
+//        echo '<pre>'; print_r($condition);exit;
 
         $rs = $this->db->table($table);
-
+		if($fields != "")
+		{
+            $rs->select($fields);
+        }
         if($orderby != "")
         {
             $rs->orderBy($orderby,'DESC');
         }
-
         if($condition != "")
         {
-            $rs->getWhere($condition);
+            $rs->where($condition);
         }
 
         if($single_row)
         {
-            return $rs->get()->getResultArray();
+            return $rs->get()->getRowArray();
         }
         return $rs->get()->getResultArray();
 
@@ -68,15 +67,20 @@ class CommonModel extends Model
 			 }
 
 			if($id == "")
-			{	
-				$query = $this->db->insert_string($table_name, $data);
+			{
+			    $builder = $this->db->table($table_name);
+				$query = $builder->insert($data);
 			}
 			else
 			{
-				$where = $table_name."_id = '$id'";
-				$query = $this->db->update_string($table_name, $data, $where);
+				$where = array($table_name."_id" => $id);
+                $builder = $this->db->table($table_name);
+                $builder->where($where);
+                $builder->set($data);
+                $builder->update();
+//				$query = $this->db->update($table_name, $data, $where);
 			}
-			$this->db->query($query);
+//			$this->db->query($query);
 		}			
 	}
 	
@@ -92,7 +96,7 @@ class CommonModel extends Model
 	{
 		$query = "SHOW COLUMNS FROM $table_name";
 		$rs = $this->db->query($query);
-		return $rs->result_array();
+		return  $rs->getResultArray();
 	}
 
 	// this function is used to get all the fields of a table.

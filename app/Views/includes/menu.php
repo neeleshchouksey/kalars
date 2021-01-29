@@ -193,7 +193,7 @@ function login()
 		data = 'phone_no='+phone_no+'&password='+password;
 		jQuery.ajax({
 			type: "POST",
-			url: site_url + "home/login",
+			url: site_url + "/home/login",
 			data: data,
 			success: function (data)
 			{ 
@@ -205,7 +205,7 @@ function login()
 						window.KalarInterface.userLogin(parseInt(obj.user_id), parseInt(obj.token));
 					}
 					
-					window.location=site_url + "user/my_profile";
+					window.location=site_url + "/user/my_profile";
 				}
 				else
 				{
@@ -268,7 +268,7 @@ function header_login()
 		data = 'phone_no='+phone_no+'&password='+password;
 		jQuery.ajax({
 			type: "POST",
-			url: site_url + "home/login",
+			url: site_url + "/home/login",
 			data: data,
 			async:false,
 			success: function (data)
@@ -281,7 +281,7 @@ function header_login()
 						window.KalarInterface.userLogin(parseInt(obj.user_id), parseInt(obj.token));
 					}
 					
-					window.location=site_url + "user/my_profile";
+					window.location=site_url + "/user/my_profile";
 				}
 				else
 				{

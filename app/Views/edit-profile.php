@@ -1,35 +1,35 @@
 <?php //echo '<pre>';print_r($user_data);exit;?>
 
-<!-- <link rel="stylesheet"  href="assets/css/colorbox.css" type="text/css">
-<link rel="stylesheet"  href="assets/css/css.css" type="text/css">
-<link rel="stylesheet"  href="assets/css/gwpm_style.css" type="text/css"> -->
+<!-- <link rel="stylesheet"  href="<?php echo base_url(); ?>/assets/css/colorbox.css" type="text/css">
+<link rel="stylesheet"  href="<?php echo base_url(); ?>/assets/css/css.css" type="text/css">
+<link rel="stylesheet"  href="<?php echo base_url(); ?>/assets/css/gwpm_style.css" type="text/css"> -->
 
 
 <!-- code for datepicker -->
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css"  href="assets/css/bootstrap-combined.min.css">
-<link rel="stylesheet" type="text/css"  href="assets/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" type="text/css"  href="<?php echo base_url(); ?>/assets/css/bootstrap-combined.min.css">
+<link rel="stylesheet" type="text/css"  href="<?php echo base_url(); ?>/assets/css/bootstrap-datetimepicker.min.css">
 <!-- end code for datepicker -->
 
 
 <!-- code for city autocomplete -->
-<script type="text/javascript" src="assets/autocity/jquery-ui.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>/assets/autocity/jquery-ui.js"></script>
 
 <!-- end code for city autocomplete -->
 
-<link rel="stylesheet" type="text/css"  href="assets/css/ui.accordion.css">
-<link rel="stylesheet" type="text/css"  href="assets/css/ui.theme.css">
+<link rel="stylesheet" type="text/css"  href="<?php echo base_url(); ?>/assets/css/ui.accordion.css">
+<link rel="stylesheet" type="text/css"  href="<?php echo base_url(); ?>/assets/css/ui.theme.css">
 
-<script type="text/javascript" src="assets/js/core.js"></script>
-<script type="text/javascript" src="assets/js/widget.js"></script>
-<script type="text/javascript" src="assets/js/accordion.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/core.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/widget.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/accordion.js"></script>
 
 
 <div id="content" role="main"><h2 class="gwpm-content-title">My Profile</h2>
 
  
 
-<form name="gwpm-profile-form" action="<?php echo base_url().'user/save_profile';?>" method="post" >
+<form name="gwpm-profile-form" action="<?php echo base_url().'/user/save_profile';?>" method="post" >
 	<div role="tablist" class="ui-accordion ui-widget ui-helper-reset" id="gwpm_accordion">
 		<h3 tabindex="-1" aria-expanded="false" aria-selected="false" aria-controls="ui-id-4" id="ui-id-3" role="tab" class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
 			<a href="#">Basic Information</a>
@@ -690,4 +690,4 @@
 		});
   </script>
 
-  <link rel="stylesheet"  href="assets/autocity/jquery-ui.css" type="text/css">
+  <link rel="stylesheet"  href="<?php echo base_url(); ?>/assets/autocity/jquery-ui.css" type="text/css">

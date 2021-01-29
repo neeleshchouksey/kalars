@@ -36,7 +36,7 @@
 								<div class="header-content-wrap overlay-wrap">
 					<div class="header-content container">
 					<div class="header-search-form clearfix">
-	<form name="search_form" action="<?php echo base_url().'home/search_results';?>"method="POST" >
+	<form name="search_form" action="<?php echo base_url().'/home/search_results';?>"method="POST" >
 		<div class="text-field field-wrap">Hello, I am a</div>
 		<div class="field-wrap">
 			<div class="select-field">
@@ -99,7 +99,7 @@
 
 		<div class="header-content container">
 			<div align="right">
-				<form class="page-title" action="" onSubmit="window.location.href = site_url+'user/profile/'+jQuery('#search_by_id').val(); return false;">
+				<form class="page-title" action="" onSubmit="window.location.href = site_url+'/user/profile/'+jQuery('#search_by_id').val(); return false;">
 					Find member Id <input id="search_by_id" style="margin:0px;"/>
 				</form>
 			</div>

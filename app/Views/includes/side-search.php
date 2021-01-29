@@ -1,5 +1,5 @@
 <div class="widget widget_themex_search"><h4 class="widget-title">Profile Search</h4><div class="profile-search-form">
-	<form name="search_form" action="<?php echo base_url().'home/search_results';?>"method="POST" >
+	<form name="search_form" action="<?php echo base_url().'/home/search_results';?>"method="POST" >
 		<table>
 			<tbody>
 				<tr>

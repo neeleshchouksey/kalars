@@ -11,25 +11,25 @@
 
 <!-- code for datepicker -->
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css"  href="assets/css/bootstrap-combined.min.css">
-<link rel="stylesheet" type="text/css"  href="assets/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" type="text/css"  href="<?php echo base_url(); ?>/assets/css/bootstrap-combined.min.css">
+<link rel="stylesheet" type="text/css"  href="<?php echo base_url(); ?>/assets/css/bootstrap-datetimepicker.min.css">
 <!-- end code for datepicker -->
 
 <!-- start age condition-->
-<script type="text/javascript" src="assets/autocity/jquery-ui.js"></script>
-<link rel="stylesheet"  href="assets/autocity/jquery-ui.css" type="text/css">
+<script type="text/javascript" src="<?php echo base_url(); ?>/assets/autocity/jquery-ui.js"></script>
+<link rel="stylesheet"  href="<?php echo base_url(); ?>/assets/autocity/jquery-ui.css" type="text/css">
 <!-- start age condition--->
 <!-- code for city autocomplete -->
-<script type="text/javascript" src="assets/autocity/jquery-ui.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>/assets/autocity/jquery-ui.js"></script>
 
 <!-- end code for city autocomplete -->
 
-<link rel="stylesheet" type="text/css"  href="assets/css/ui.accordion.css">
-<link rel="stylesheet" type="text/css"  href="assets/css/ui.theme.css">
+<link rel="stylesheet" type="text/css"  href="<?php echo base_url(); ?>/assets/css/ui.accordion.css">
+<link rel="stylesheet" type="text/css"  href="<?php echo base_url(); ?>/assets/css/ui.theme.css">
 
-<script type="text/javascript" src="assets/js/core.js"></script>
-<script type="text/javascript" src="assets/js/widget.js"></script>
-<script type="text/javascript" src="assets/js/accordion.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/core.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/widget.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/accordion.js"></script>
 
 
 <div ><h2 >Settings</h2></div>
@@ -105,7 +105,7 @@
 								<?php for($i=18;$i<=60;$i++)
 								{
 								?>
-									<option value="<?php echo $i;?>" <?php if($this->user_data['filter_age_to']==$i) echo 'selected';?>><?php echo $i;?></option><?php// echo $i;?>
+									<option value="<?php echo $i;?>" <?php if($this->user_data['filter_age_to']==$i) echo 'selected';?>><?php echo $i;?></option>
 								<?php
 								}
 								?>

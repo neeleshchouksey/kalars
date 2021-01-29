@@ -1,8 +1,8 @@
 <?php echo view('includes/slider-top');
 
-$profile_pic = $user_data['profile_pic'] == '' ? base_url().'assets/images/default.png' :  image_thumb('uploads/gallery/'.$user_data['user_id']. $user_data['name'].'/', 600, 600, $user_data['user_id'], $user_data['profile_pic']);
+$profile_pic = $user_data['profile_pic'] == '' ? base_url().'/assets/images/default.png' :  image_thumb($user_data['user_id']. $user_data['name'].'/', 600, 600, $user_data['user_id'], $user_data['profile_pic']);
 
-$profile_pic_thumb = $user_data['profile_pic'] == '' ? base_url().'assets/images/default.png' :  image_thumb('uploads/gallery/'.$user_data['user_id']. $user_data['name'].'/', 200, 200, $user_data['user_id'], $user_data['profile_pic']);
+$profile_pic_thumb = $user_data['profile_pic'] == '' ? base_url().'/assets/images/default.png' :  image_thumb($user_data['user_id']. $user_data['name'].'/', 200, 200, $user_data['user_id'], $user_data['profile_pic']);
 ?>
 <aside class="column threecol">
 	<div class="profile-preview">
@@ -15,7 +15,7 @@ $profile_pic_thumb = $user_data['profile_pic'] == '' ? base_url().'assets/images
 			<!-- <form class="upload-form" enctype="multipart/form-data" method="POST" action="<?php echo base_url().'user/update_profile_pic';?>"> -->
 				<label for="upload" class="button small">Change Photo</label>
 				<input type="file" name="user_avatar" id="upload" value="Choose a file" class="shifted" accept="image/*" />
-				<a href="user/my_profile#comming_soon" id="hit" style="display:none;">
+				<a href="<?php echo base_url();?>/user/my_profile#comming_soon" id="hit" style="display:none;">
 					<p>&nbsp;&nbsp;</p>
 				</a>
 			<!-- </form> -->
@@ -376,10 +376,10 @@ $profile_pic_thumb = $user_data['profile_pic'] == '' ? base_url().'assets/images
 <?php echo view('includes/slider-bottom');?>
 
 <!---Photo Crop-->
-<script src="assets/crop/js/jquery.min.js"></script>
-<script src="assets/crop/js/sweetalert.min.js"></script>
-<script src="assets/crop/js/croppie.js"></script>
-<script src="assets/crop/js/demo.js"></script>
+<script src="<?php echo base_url();?>/assets/crop/js/jquery.min.js"></script>
+<script src="<?php echo base_url();?>/assets/crop/js/sweetalert.min.js"></script>
+<script src="<?php echo base_url();?>/assets/crop/js/croppie.js"></script>
+<script src="<?php echo base_url();?>/assets/crop/js/demo.js"></script>
 <script>
 	Demo.init();
 </script>
