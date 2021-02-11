@@ -144,7 +144,9 @@ class Home extends BaseController
 			$this->session->set('user_data', $user_data);
 			$this->commonmodel->addEditRecords('user', array('last_login'=>date('Y-m-d H:i:s')), $user_data['user_id']);
 		}
-		redirect('user/my_profile');
+
+        return redirect()->to(base_url().'/user/my_profile');
+
 	}
 
 	public function login()
