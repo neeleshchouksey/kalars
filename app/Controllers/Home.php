@@ -139,6 +139,15 @@ class Home extends BaseController
 
 		if($user_data)
 		{
+            $user = $this->session->get('user_data');
+            if($user) {
+                $user_id = $user['user_id'];
+                $token = rand(10000, 99999);
+                $this->commonmodel->addEditRecords('user', array('token' => $token), $user_id);
+                $this->session->remove('user_id', $user_data['user_id']);
+                $this->session->remove('phone_no', $user_data['phone_no']);
+                $this->session->remove('user_data', $user_data);
+            }
 			$this->session->set('user_id', $user_data['user_id']);
 			$this->session->set('phone_no', $user_data['phone_no']);
 			$this->session->set('user_data', $user_data);
@@ -266,7 +275,7 @@ class Home extends BaseController
 		$data['post_data'] = $post_data  = $this->request->getPost();
 		//echo '<pre>'; print_r($post_data);///exit;
 
-		$condition = array();
+		$condition = array("is_active" => 1, "is_deleted" => 0);
 		if(isset($post_data['age_from']) && trim($post_data['age_from']) !='' && trim($post_data['age_from']) !=NULL) 
 		{
 			$timestamp = strtotime('-'.$post_data['age_from'].' years');

@@ -102,7 +102,8 @@ class CommonModel extends Model
 	// this function is used to get all the fields of a table.
 	function isLoggedIn()
 	{
-		if(isset($this->user_data) && isset($this->user_data))
+//	    print_r($this->user_data);die;
+		if($this->user_data)
 		{
 			return true;
 		}

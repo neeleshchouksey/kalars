@@ -36,7 +36,7 @@ class UserModel extends Model
 //    	$this->db->select('user_id,name,last_name,profile_pic');
         $rs->orderBy('profile_pic', 'desc');
     	$rs->limit($limit, $start);
-    	$rs->getWhere($condition);
+    	$rs->where($condition);
         return $rs->get()->getResultArray();
     }
 

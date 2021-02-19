@@ -45,3 +45,43 @@ composer.lock
 *.iml
 
 app/Config/Database.php
+
+
+klrdmin/.env
+
+klrdmin/writable/cache/*
+!klrdmin/writable/cache/index.html
+
+klrdmin/writable/logs/*
+!klrdmin/writable/logs/index.html
+
+klrdmin/writable/session/*
+!klrdmin/writable/session/index.html
+
+klrdmin/writable/uploads/*
+!klrdmin/writable/uploads/index.html
+
+klrdmin/writable/debugbar/*
+!klrdmin/writable/debugbar/.gitkeep
+
+klrdmin/writable/**/*.db
+klrdmin/writable/**/*.sqlite
+
+klrdmin/php_errors.log
+
+#-------------------------
+# Composer
+#-------------------------
+klrdmin/vendor/
+klrdmin/composer.lock
+
+#-------------------------
+# IDE / Development Files
+#-------------------------
+
+# Jetbrains editors (PHPStorm, etc)
+klrdmin/.idea/
+klrdmin/*.iml
+
+klrdmin/app/Config/Database.php
+

@@ -40,109 +40,128 @@ class User extends BaseController
             return true;
         } else {
             $this->session->destroy();
-
             return redirect()->to(base_url().'/home/sign_up');
         }
     }
 
     public function my_profile()
     {
-        $this->check_auth();
-        $data['logged_in'] = true;
+        if ($this->commonmodel->isLoggedIn()) {
+
+            $data['logged_in'] = true;
 
 
-        $rs = $this->db->table('user as u')
-            ->select('u.user_id, u.name, u.last_name, u.profile_pic, u.is_deleted')
-            ->join('favorites f', 'u.user_id = f.favorite_user_id')
-            ->where('f.user_id', $this->user_data['user_id'])
-            ->where('u.is_deleted =', 0)
-            ->limit(3);
+            $rs = $this->db->table('user as u')
+                ->select('u.user_id, u.name, u.last_name, u.profile_pic, u.is_deleted')
+                ->join('favorites f', 'u.user_id = f.favorite_user_id')
+                ->where('f.user_id', $this->user_data['user_id'])
+                ->where('u.is_deleted =', 0)
+                ->limit(3);
 
-        $data['favorites'] =$rs->get()->getResultArray();
+            $data['favorites'] = $rs->get()->getResultArray();
 
-        $data['photos'] = $this->commonmodel->getRecords('photo', '', array("user_id" => $this->user_data['user_id']));
+            $data['photos'] = $this->commonmodel->getRecords('photo', '', array("user_id" => $this->user_data['user_id']));
 
-        $data['user_data'] = $this->user_data;
-        echo view('includes/header2', $data);
-        echo view('my-profile');
-        echo view('includes/footer');
+            $data['user_data'] = $this->user_data;
+            echo view('includes/header2', $data);
+            echo view('my-profile');
+            echo view('includes/footer');
+        } else {
+            $this->session->destroy();
+            return redirect()->to(base_url().'/home/sign_up');
+        }
     }
 
     public function edit_profile()
     {
-        $this->check_auth();
+        if ($this->commonmodel->isLoggedIn()) {
 
-        $data['user_data'] = $this->user_data;
-        //echo '<pre>';print_r($data['user_data']);exit;
 
-        $data['user_data']['dob'] = date('d/m/Y h:i:s A', strtotime($data['user_data']['dob']));
+            $data['user_data'] = $this->user_data;
+            //echo '<pre>';print_r($data['user_data']);exit;
 
-        $height = explode(',', $data['user_data']['height']);
-        $data['user_data']['height_feet'] = $height[0];
-        $data['user_data']['height_inch'] = isset($height[1]) ? $height[1] : 0;
+            $data['user_data']['dob'] = date('d/m/Y h:i:s A', strtotime($data['user_data']['dob']));
 
-        $p_height = explode(',', $data['user_data']['p_height']);
-        $data['user_data']['p_height_feet'] = $p_height[0];
-        $data['user_data']['p_height_inch'] = isset($p_height[1]) ? $p_height[1] : 0;
+            $height = explode(',', $data['user_data']['height']);
+            $data['user_data']['height_feet'] = $height[0];
+            $data['user_data']['height_inch'] = isset($height[1]) ? $height[1] : 0;
 
-        echo view('includes/header2', $data);
-        echo view('edit-profile');
-        echo view('includes/footer');
+            $p_height = explode(',', $data['user_data']['p_height']);
+            $data['user_data']['p_height_feet'] = $p_height[0];
+            $data['user_data']['p_height_inch'] = isset($p_height[1]) ? $p_height[1] : 0;
+
+            echo view('includes/header2', $data);
+            echo view('edit-profile');
+            echo view('includes/footer');
+        } else {
+            $this->session->destroy();
+            return redirect()->to(base_url().'/home/sign_up');
+        }
     }
 
     public function save_profile()
     {
-        $this->check_auth();
+        if ($this->commonmodel->isLoggedIn()) {
 
-        $post_data = $this->request->getPost();
 
-        //$data['user_data'] = $user_data = $this->user_data;
-        $user_id = $this->session->get('user_id');
+            $post_data = $this->request->getPost();
 
-        $date = str_replace('/', '-', $post_data['dob']);
-        $post_data['dob'] = date('Y-m-d H:i:s', strtotime($date));
+            //$data['user_data'] = $user_data = $this->user_data;
+            $user_id = $this->session->get('user_id');
 
-        $post_data['height'] = $post_data['height_feet'] . ',' . $post_data['height_inch'];
-        $post_data['p_height'] = $post_data['p_height_feet'] . ',' . $post_data['p_height_inch'];
-        //echo '<pre>';print_r($post_data);exit;
+            $date = str_replace('/', '-', $post_data['dob']);
+            $post_data['dob'] = date('Y-m-d H:i:s', strtotime($date));
 
-        $this->commonmodel->addEditRecords('user', $post_data, $user_id);
-        $user_data = $this->commonmodel->getRecords('user', '', array("user_id" => $user_id), '', true);
-        $this->session->set('user_data', $user_data);
+            $post_data['height'] = $post_data['height_feet'] . ',' . $post_data['height_inch'];
+            $post_data['p_height'] = $post_data['p_height_feet'] . ',' . $post_data['p_height_inch'];
+            //echo '<pre>';print_r($post_data);exit;
 
-        return redirect()->to(base_url().'/user/my_profile');
+            $this->commonmodel->addEditRecords('user', $post_data, $user_id);
+            $user_data = $this->commonmodel->getRecords('user', '', array("user_id" => $user_id), '', true);
+            $this->session->set('user_data', $user_data);
+
+            return redirect()->to(base_url() . '/user/my_profile');
+        } else {
+            $this->session->destroy();
+            return redirect()->to(base_url().'/home/sign_up');
+        }
     }
 
     public function update_profile_pic()
     {
         //echo '<pre>';print_r($_POST);EXIT;
-        $this->check_auth();
+        if ($this->commonmodel->isLoggedIn()) {
 
-        $userDir = IMG_PATH . $this->user_data['user_id'] . $this->user_data['name'];
-        if (!is_dir($userDir)) {
-            //echo "directory not exists";
-            mkdir($userDir, 0777, true);
+
+            $userDir = IMG_PATH . $this->user_data['user_id'] . $this->user_data['name'];
+            if (!is_dir($userDir)) {
+                //echo "directory not exists";
+                mkdir($userDir, 0777, true);
+            }
+
+            $img_name = "klr_img_" . uniqid() . ".jpg";
+            $img = $this->request->getPost('user_avatar');
+            $img = str_replace('data:image/png;base64,', '', $img);
+            $img = str_replace('data:image/jpeg;base64,', '', $img);
+            $img = str_replace(' ', '+', $img);
+            $data = base64_decode($img);
+            file_put_contents($userDir . '/' . $img_name, $data);
+
+
+            $post_data['profile_pic'] = $img_name;
+            $this->commonmodel->addEditRecords('user', $post_data, $this->user_data['user_id']);
+            $old_img = IMG_PATH . $this->user_data['user_id'] . $this->user_data['name'] . '/' . $this->user_data['profile_pic'];
+            if ($this->user_data['profile_pic']) {
+                unlink($old_img);
+            }
+            $user_data = $this->commonmodel->getRecords('user', '', array("user_id" => $this->user_data['user_id']), '', true);
+            $this->session->set('user_data', $user_data);
+
+            echo 'success';
+        } else {
+            $this->session->destroy();
+            return redirect()->to(base_url().'/home/sign_up');
         }
-
-        $img_name = "klr_img_" . uniqid() . ".jpg";
-        $img = $this->request->getPost('user_avatar');
-        $img = str_replace('data:image/png;base64,', '', $img);
-        $img = str_replace('data:image/jpeg;base64,', '', $img);
-        $img = str_replace(' ', '+', $img);
-        $data = base64_decode($img);
-        file_put_contents($userDir . '/' . $img_name, $data);
-
-
-        $post_data['profile_pic'] = $img_name;
-        $this->commonmodel->addEditRecords('user', $post_data, $this->user_data['user_id']);
-        $old_img = IMG_PATH . $this->user_data['user_id'] . $this->user_data['name'] . '/' . $this->user_data['profile_pic'];
-        if($this->user_data['profile_pic']) {
-            unlink($old_img);
-        }
-        $user_data = $this->commonmodel->getRecords('user', '', array("user_id" => $this->user_data['user_id']), '', true);
-        $this->session->set('user_data', $user_data);
-
-        echo 'success';
         //redirect('user/my_profile');
     }
 
@@ -163,7 +182,6 @@ class User extends BaseController
 //		echo '<pre>' ;
 //		echo($this->db->getLastQuery());
 //		exit;
-//        echo '<pre>'; print_r($data);die;
 
         $age = date_diff(date_create($data['user_data']['dob']), date_create('today'))->y;
         $data['title'] = "Name - " . $data['user_data']['name'] . "," . " " . "Age - " . $age . "," . " " . "City - " . $data['user_data']['city'];
@@ -171,7 +189,7 @@ class User extends BaseController
         $data['abused'] = $this->commonmodel->getRecords('report_abuse', '', array("abused_user_id" => $user_id), '', true);
 //        echo '<pre>'; print_r($data);die;
         if (!count($data['user_data'])) {
-            redirect('home/search');
+            return redirect()->to(base_url().'/home/search');
         }
 
         echo view('includes/header2', $data);
@@ -188,12 +206,12 @@ class User extends BaseController
             'is_active' => 0
         );
         $this->commonmodel->addEditRecords('user', $data, $user_id);
-        $user_id = $this->session->userdata('user_id');
+        $user_id = $this->session->get('user_id');
         $token = rand(10000, 99999);
         $this->commonmodel->addEditRecords('user', array('token' => $token), $user_id);
         $this->session->destroy();
 
-        redirect('home');
+        return redirect()->to(base_url().'/home');
     }
 
     public function brides()
@@ -274,95 +292,118 @@ class User extends BaseController
 
     public function markfavorites()
     {
-        $this->check_auth();
+        if ($this->commonmodel->isLoggedIn()) {
 
-        $favorite_user_id = $this->request->getPost('favorite_user_id');
 
-        $fav_data = $this->commonmodel->getRecords('favorites', '', array("user_id" => $this->user_data['user_id'], "favorite_user_id" => $favorite_user_id));
-        if (count($fav_data)) {
-            $this->commonmodel->deleteRecords('favorites', "user_id= " . $this->user_data['user_id'] . " AND favorite_user_id = " . $favorite_user_id);
-            echo 0;
+            $favorite_user_id = $this->request->getPost('favorite_user_id');
+
+            $fav_data = $this->commonmodel->getRecords('favorites', '', array("user_id" => $this->user_data['user_id'], "favorite_user_id" => $favorite_user_id));
+            if (count($fav_data)) {
+                $this->commonmodel->deleteRecords('favorites', "user_id= " . $this->user_data['user_id'] . " AND favorite_user_id = " . $favorite_user_id);
+                echo 0;
+            } else {
+                $post_data['user_id'] = $this->user_data['user_id'];
+                $post_data['favorite_user_id'] = $favorite_user_id;
+                $this->commonmodel->addEditRecords('favorites', $post_data);
+                echo 1;
+            }
         } else {
-            $post_data['user_id'] = $this->user_data['user_id'];
-            $post_data['favorite_user_id'] = $favorite_user_id;
-            $this->commonmodel->addEditRecords('favorites', $post_data);
-            echo 1;
+            $this->session->destroy();
+            return redirect()->to(base_url().'/home/sign_up');
         }
     }
 
     public function favorites()
     {
-        $this->check_auth();
+        if ($this->commonmodel->isLoggedIn()) {
 
-        $rs = $this->db->table('user u')
-            ->select('u.user_id, u.name, u.last_name, u.profile_pic')
-            ->join('favorites f', 'u.user_id = f.favorite_user_id')
-            ->where('f.user_id', $this->user_data['user_id']);
-        $data['favorites'] = $rs->get()->getResultArray();
 
-        //$data['favorites'] = $this->commonmodel->getRecords('user', 'user_id,name,last_name,profile_pic', array("gender"=>'Male'));
-        echo view('includes/header2');
-        echo view('favorites', $data);
-        echo view('includes/footer');
+            $rs = $this->db->table('user u')
+                ->select('u.user_id, u.name, u.last_name, u.profile_pic')
+                ->join('favorites f', 'u.user_id = f.favorite_user_id')
+                ->where('f.user_id', $this->user_data['user_id']);
+            $data['favorites'] = $rs->get()->getResultArray();
+
+            //$data['favorites'] = $this->commonmodel->getRecords('user', 'user_id,name,last_name,profile_pic', array("gender"=>'Male'));
+            echo view('includes/header2');
+            echo view('favorites', $data);
+            echo view('includes/footer');
+        } else {
+            $this->session->destroy();
+            return redirect()->to(base_url().'/home/sign_up');
+        }
     }
 
     public function gallery($user_id)
     {
-        $this->check_auth();
-
-        $data['photos'] = $this->commonmodel->getRecords('photo', '', array("user_id" => $user_id));
-        $data['profile_user_data'] = $this->commonmodel->getRecords('user', '', array("user_id" => $user_id), '', true);
-        $data['user_data'] = $this->user_data;
+        if ($this->commonmodel->isLoggedIn()) {
 
 
-        //$data['favorites'] = $this->commonmodel->getRecords('user', 'user_id,name,last_name,profile_pic', array("gender"=>'Male'));
-        echo view('includes/header2');
-        echo view('gallery', $data);
-        echo view('includes/footer');
+            $data['photos'] = $this->commonmodel->getRecords('photo', '', array("user_id" => $user_id));
+            $data['profile_user_data'] = $this->commonmodel->getRecords('user', '', array("user_id" => $user_id), '', true);
+            $data['user_data'] = $this->user_data;
+
+
+            //$data['favorites'] = $this->commonmodel->getRecords('user', 'user_id,name,last_name,profile_pic', array("gender"=>'Male'));
+            echo view('includes/header2');
+            echo view('gallery', $data);
+            echo view('includes/footer');
+        } else {
+            $this->session->destroy();
+            return redirect()->to(base_url().'/home/sign_up');
+        }
     }
 
     public function add_delete_photo()
     {
-        $this->check_auth();
-        $post_data = $this->request->getPost();
+        if ($this->commonmodel->isLoggedIn()) {
 
-        if (isset($post_data['photo_id'])) {
-            $this->commonmodel->deleteRecords('photo', "user_id = " . $this->user_data['user_id'] . " AND photo_id = " . $post_data['photo_id']);
-            $old_img = IMG_PATH . $this->user_data['user_id'] . $this->user_data['name'] . '/' . $post_data['photo'];
-            unlink($old_img);
-            return redirect()->to(base_url().'/user/gallery/' . $this->user_data['user_id']);
+            $post_data = $this->request->getPost();
+
+            if (isset($post_data['photo_id'])) {
+                $this->commonmodel->deleteRecords('photo', "user_id = " . $this->user_data['user_id'] . " AND photo_id = " . $post_data['photo_id']);
+                $old_img = IMG_PATH . $this->user_data['user_id'] . $this->user_data['name'] . '/' . $post_data['photo'];
+                unlink($old_img);
+                return redirect()->to(base_url() . '/user/gallery/' . $this->user_data['user_id']);
+            }
+
+            $userDir = IMG_PATH . $this->user_data['user_id'] . $this->user_data['name'];
+            if (!is_dir($userDir)) {
+                //echo "directory not exists";
+                mkdir($userDir, 0777, true);
+            }
+
+            $img_name = "klr_img_" . uniqid() . ".jpg";
+            $img = $this->request->getPost('user_avatar');
+            $img = str_replace('data:image/png;base64,', '', $img);
+            $img = str_replace('data:image/jpeg;base64,', '', $img);
+            $img = str_replace(' ', '+', $img);
+            $data = base64_decode($img);
+            file_put_contents($userDir . '/' . $img_name, $data);
+
+            $post_data['photo'] = $img_name;
+            $post_data['user_id'] = $this->user_data['user_id'];
+            $this->commonmodel->addEditRecords('photo', $post_data);
+            //redirect('user/gallery/'.$this->user_data['user_id']);
+            echo 'gallery success';
+        } else {
+            $this->session->destroy();
+            return redirect()->to(base_url().'/home/sign_up');
         }
-
-        $userDir = IMG_PATH . $this->user_data['user_id'] . $this->user_data['name'];
-        if (!is_dir($userDir)) {
-            //echo "directory not exists";
-            mkdir($userDir, 0777, true);
-        }
-
-        $img_name = "klr_img_" . uniqid() . ".jpg";
-        $img = $this->request->getPost('user_avatar');
-        $img = str_replace('data:image/png;base64,', '', $img);
-        $img = str_replace('data:image/jpeg;base64,', '', $img);
-        $img = str_replace(' ', '+', $img);
-        $data = base64_decode($img);
-        file_put_contents($userDir . '/' . $img_name, $data);
-
-        $post_data['photo'] = $img_name;
-        $post_data['user_id'] = $this->user_data['user_id'];
-        $this->commonmodel->addEditRecords('photo', $post_data);
-        //redirect('user/gallery/'.$this->user_data['user_id']);
-        echo 'gallery success';
-
     }
 
     public function report_abuse($abused_user_id)
     {
-        $this->check_auth();
+        if ($this->commonmodel->isLoggedIn()) {
 
-        $post_data['abused_by_user_id'] = $this->user_data['user_id'];
-        $post_data['abused_user_id'] = $abused_user_id;
-        $this->commonmodel->addEditRecords('report_abuse', $post_data);
-        redirect('user/profile/' . $abused_user_id);
+            $post_data['abused_by_user_id'] = $this->user_data['user_id'];
+            $post_data['abused_user_id'] = $abused_user_id;
+            $this->commonmodel->addEditRecords('report_abuse', $post_data);
+            return redirect()->to(base_url() . '/user/profile/' . $abused_user_id);
+        }else{
+            return redirect()->to(base_url() . '/home/sign_up');
+
+        }
     }
 
     public function user_setting()
@@ -379,52 +420,67 @@ class User extends BaseController
 
     public function set_interest_privacy()
     {
-        $this->check_auth();
-        $rdn_val = $this->request->getPost('rdn_val');
+        if ($this->commonmodel->isLoggedIn()) {
 
-        $user_id = $this->user_data['user_id'];
-        $arr = array('interest_privacy' => $rdn_val);
-        $this->commonmodel->addEditRecords('user', $arr, $user_id);
+            $rdn_val = $this->request->getPost('rdn_val');
 
-        $this->user_data['interest_privacy'] = $rdn_val;
-        $this->session->set('user_data', $this->user_data);
+            $user_id = $this->user_data['user_id'];
+            $arr = array('interest_privacy' => $rdn_val);
+            $this->commonmodel->addEditRecords('user', $arr, $user_id);
+
+            $this->user_data['interest_privacy'] = $rdn_val;
+            $this->session->set('user_data', $this->user_data);
+        } else {
+            $this->session->destroy();
+            return redirect()->to(base_url().'/home/sign_up');
+        }
     }
 
     public function interest_send()
     {
-        $this->check_auth();
-        $interest_user_id = $this->request->getPost('interest_user_id');
-        $user_id = $this->user_data['user_id'];
-        $arr = array(
-            'sender_id' => $user_id,
-            'receiver_id' => $interest_user_id,
-            'status_interest' => 1,
-            'modified_date' => date('Y-m-d H:i:s')
-        );
-        $interest_data = $this->commonmodel->addEditRecords('user_interest', $arr);
+        if ($this->commonmodel->isLoggedIn()) {
+
+            $interest_user_id = $this->request->getPost('interest_user_id');
+            $user_id = $this->user_data['user_id'];
+            $arr = array(
+                'sender_id' => $user_id,
+                'receiver_id' => $interest_user_id,
+                'status_interest' => 1,
+                'modified_date' => date('Y-m-d H:i:s')
+            );
+            $interest_data = $this->commonmodel->addEditRecords('user_interest', $arr);
+        } else {
+            $this->session->destroy();
+            return redirect()->to(base_url().'/home/sign_up');
+        }
     }
 
     public function user_interest()
     {
-        $this->check_auth();
+        if ($this->commonmodel->isLoggedIn()) {
 
-        $data['logged_in'] = true;
-        $fav_data = $this->commonmodel->getRecords('favorites', 'favorite_user_id', array("user_id" => $this->user_data['user_id']));
-        $data['fav_data'] = array();
-        foreach ($fav_data as $fav_row) {
-            $data['fav_data'][] = $fav_row['favorite_user_id'];
+
+            $data['logged_in'] = true;
+            $fav_data = $this->commonmodel->getRecords('favorites', 'favorite_user_id', array("user_id" => $this->user_data['user_id']));
+            $data['fav_data'] = array();
+            foreach ($fav_data as $fav_row) {
+                $data['fav_data'][] = $fav_row['favorite_user_id'];
+            }
+
+            $user_id = $this->user_data['user_id'];
+            $data['users'] = $this->user_model->user_interest_detail($user_id);
+            if (!$data['users']) {
+                $this->session->setFlashdata('interest_messagey', 'No Interest User...');
+            }
+            //echo '<pre>';print_r($data['users']);print_r($data['users1']);exit;
+
+            echo view('includes/header2', $data);
+            echo view('user_interest');
+            echo view('includes/footer');
+        } else {
+            $this->session->destroy();
+            return redirect()->to(base_url().'/home/sign_up');
         }
-
-        $user_id = $this->user_data['user_id'];
-        $data['users'] = $this->user_model->user_interest_detail($user_id);
-        if (!$data['users']) {
-            $this->session->setFlashdata('interest_messagey', 'No Interest User...');
-        }
-        //echo '<pre>';print_r($data['users']);print_r($data['users1']);exit;
-
-        echo view('includes/header2', $data);
-        echo view('user_interest');
-        echo view('includes/footer');
     }
 
     public function accept_interest()
@@ -456,37 +512,47 @@ class User extends BaseController
 
     public function accept_interest_list()
     {
-        $this->check_auth();
+        if ($this->commonmodel->isLoggedIn()) {
 
-        $data['logged_in'] = true;
-        $fav_data = $this->commonmodel->getRecords('favorites', 'favorite_user_id', array("user_id" => $this->user_data['user_id']));
-        $data['fav_data'] = array();
-        foreach ($fav_data as $fav_row) {
-            $data['fav_data'][] = $fav_row['favorite_user_id'];
+
+            $data['logged_in'] = true;
+            $fav_data = $this->commonmodel->getRecords('favorites', 'favorite_user_id', array("user_id" => $this->user_data['user_id']));
+            $data['fav_data'] = array();
+            foreach ($fav_data as $fav_row) {
+                $data['fav_data'][] = $fav_row['favorite_user_id'];
+            }
+
+            $user_id = $this->user_data['user_id'];
+            $data['users'] = $this->user_model->accept_interest_list($user_id);
+
+            echo view('user_interest_accept', $data);
+        } else {
+            $this->session->destroy();
+            return redirect()->to(base_url().'/home/sign_up');
         }
-
-        $user_id = $this->user_data['user_id'];
-        $data['users'] = $this->user_model->accept_interest_list($user_id);
-
-        echo view('user_interest_accept', $data);
     }
 
 
     public function archive_interest_list()
     {
-        $this->check_auth();
+        if ($this->commonmodel->isLoggedIn()) {
 
-        $data['logged_in'] = true;
-        $fav_data = $this->commonmodel->getRecords('favorites', 'favorite_user_id', array("user_id" => $this->user_data['user_id']));
-        $data['fav_data'] = array();
-        foreach ($fav_data as $fav_row) {
-            $data['fav_data'][] = $fav_row['favorite_user_id'];
+
+            $data['logged_in'] = true;
+            $fav_data = $this->commonmodel->getRecords('favorites', 'favorite_user_id', array("user_id" => $this->user_data['user_id']));
+            $data['fav_data'] = array();
+            foreach ($fav_data as $fav_row) {
+                $data['fav_data'][] = $fav_row['favorite_user_id'];
+            }
+
+            $user_id = $this->user_data['user_id'];
+            $data['users'] = $this->user_model->archive_interest_list($user_id);
+
+            echo view('archive_interest_list', $data);
+        } else {
+            $this->session->destroy();
+            return redirect()->to(base_url().'/home/sign_up');
         }
-
-        $user_id = $this->user_data['user_id'];
-        $data['users'] = $this->user_model->archive_interest_list($user_id);
-
-        echo view('archive_interest_list', $data);
     }
 
     public function filter_record()

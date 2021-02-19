@@ -43,7 +43,7 @@
 							else
 							{
 							?>
-							<a href="javascript:void(0);" onClick="window.location.href = site_url +'home/sign_up';">
+							<a href="javascript:void(0);" onClick="window.location.href = site_url +'/home/sign_up';">
 							<?php
 							}
 							?>
