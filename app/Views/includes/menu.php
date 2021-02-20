@@ -121,10 +121,16 @@ $ua = stripos($user_agent, 'android');
 
 <?php
 $uri = current_url(true);
-$menu = $uri->getSegment(2);
+
+if ($uri->getTotalSegments() >= 2 && $uri->getSegment(2))
+{
+    $menu = $uri->getSegment(2);
+}else{
+    $menu = '';
+}
 ?>
 <script>
-menu = '<?php echo $uri->getSegment(2); ?>';
+menu = '<?php echo $menu; ?>';
 menu = menu == 'search_results'?'search':menu;
 if(menu == '')
 {

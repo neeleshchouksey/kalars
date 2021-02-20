@@ -38,36 +38,7 @@
             </table>
         </form>
     </div>
-    <div id="tbl-user-list">
-        <table border="0" cellspacing="0" cellpadding="0" class="data-table" id="tbl_user_list" style="border-bottom: none">
-<!--            <thead>-->
-            <tr>
-                <th width="5%">S.No.</th>
-                <th width="5%">Status</th>
-                <th width="5%">Id</th>
-                <th width="5%">image</th>
-                <th width="15%">Name</th>
-                <th width="15%">Phone</th>
-                <th width="20%">Date</th>
-                <th width="20%">Options</th>
-            </tr>
-<!--            </thead>-->
-<!--            <tbody id="t-body">-->
-
-<!--            </tbody>-->
-        </table>
-
-        <?php if($total > 0){ ?>
-                <input type="hidden" id="total-user" value="<?php echo $total; ?>" />
-            <div class="load-more" lastID="100" style="display: none;">
-            </div>
-        <?php } else{?>
-            <div class="load-more" lastID="0">
-                That's All!
-            </div>
-        <?php } ?>
-
-    </div>
+    <?php echo view('user_list');?>
 
 
     <br/>
@@ -79,7 +50,7 @@
 <!--PopUp : End-->
 
 <script type="text/javascript">
-    // users_list();
+
 </script>
 
 

@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\AdminModel;
 use App\Models\CommonModel;
+use DateTime;
 
 class Admin extends BaseController
 {
@@ -292,23 +293,43 @@ class Admin extends BaseController
             $this->session->set('redirect_url', uri_string());
 
             $limit = 100;
-            $data['count'] = $offset;
+            $data['count'] = $limit+$offset;
 
             $order_by = $this->session->get('order_by');
             $where = $this->session->get('where_condition');
 
-            $data['users'] = $this->commonmodel->getRecords('user', '', $where, $order_by, '', $limit, $offset);
+            $user = $this->commonmodel->getRecords('user', '', $where, $order_by, '', $limit, $offset);
+
+            for($i=0;$i<sizeof($user);$i++){
+                $user[$i]['profile_pic'] = image_thumb(KALARS_URL . 'uploads/gallery/' . $user[$i]['user_id'] . $user[$i]['name'] . '/', 30, 30, $user[$i]['user_id'], $user[$i]['profile_pic']);
+                $date = new DateTime($user[$i]['registered']);
+                $user[$i]['registered'] = $date->format('d-M-Y h:i A');
+            }
+
+            $data['users'] = $user;
+
             $data['total'] = count($this->commonmodel->getRecords('user', '', $where, $order_by , '', '', ''));
             $data['msg'] = $this->session->get('msg');
             $data['menu'] = 'users';
             $this->session->remove('msg');
 
-            echo view('user_list', $data);
-
+//            echo view('user_list', $data);
+            echo json_encode($data);
         } else {
             $this->session->destroy();
             return redirect()->to(base_url().'/admin');
         }
+    }
+
+    public function image_thumb(){
+        $image_path = $this->request->getPost('url');
+        $height = $this->request->getPost('height');
+        $width = $this->request->getPost('width');
+        $user_id = $this->request->getPost('user_id');
+        $image_name = $this->request->getPost('image_name');
+//        $image_path = KALARS_URL . '/uploads/gallery/' . $user_id . $name . '/';
+        $res = image_thumb($image_path, $height, $width,$user_id,$image_name);
+        echo json_encode($res);
     }
 
     public function search_bar()
@@ -319,16 +340,25 @@ class Admin extends BaseController
 
             $search_item = $this->request->getPost('search_item');
             $where = $this->session->get('where_condition');
-            $data['users'] = $this->adminmodel->get_searchbar_info($search_item, $where);
+
+            $user =  $this->adminmodel->get_searchbar_info($search_item, $where);
+
+            for($i=0;$i<sizeof($user);$i++){
+                $user[$i]['profile_pic'] = image_thumb(KALARS_URL . 'uploads/gallery/' . $user[$i]['user_id'] . $user[$i]['name'] . '/', 30, 30, $user[$i]['user_id'], $user[$i]['profile_pic']);
+                $date = new DateTime($user[$i]['registered']);
+                $user[$i]['registered'] = $date->format('d-M-Y h:i A');
+            }
+
+            $data['users'] = $user;
+
             $data['total'] = count($this->adminmodel->get_searchbar_info($search_item, $where));
-
-            //echo '<pre>';print_r($data);exit;
-            $data['count'] = 0;
-
             $data['msg'] = $this->session->get('msg');
             $data['menu'] = 'users';
             $this->session->remove('msg');
-            echo view('user_list', $data);
+
+//            echo view('user_list', $data);
+            echo json_encode($data);
+
         } else {
             $this->session->destroy();
             return redirect()->to(base_url().'/admin');

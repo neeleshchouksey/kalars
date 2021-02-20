@@ -7,6 +7,7 @@
 	var site_url = '<?php echo site_url();?>';
 	var base_url = '<?php echo base_url();?>';
 	var current_url = '<?php echo current_url();?>';
+    var KALARS_URL = '<?php echo KALARS_URL;?>';
 </script>
 
 <base href="<?php echo base_url();?>">

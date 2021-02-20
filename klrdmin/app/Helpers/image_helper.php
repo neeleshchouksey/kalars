@@ -16,9 +16,9 @@ function image_thumb($image_path, $height, $width,$user_id,$image_name)
                 ->withFile($source_image)
                 ->fit($width, $height, 'center')
                 ->save(IMG_PATH . $new_image_thumb);
-            return KALARS_URL . '/uploads/gallery/' . $new_image_thumb;
+            return KALARS_URL . 'uploads/gallery/' . $new_image_thumb;
         }else{
-	        return KALARS_URL.'/assets/images/default.png';
+	        return KALARS_URL.'assets/images/default.png';
         }
     }
 
